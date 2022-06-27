@@ -59,7 +59,7 @@ module.exports = {
           iconURL: client.botconfig.IconURL,
         })
         .setDescription(cmd.description)
-        .setColor("GREEN")
+        .setColor("BLUE")
         //.addField("Name", cmd.name, true)
         .addField("Aliases", `\`${cmd.aliases.join(", ")}\``, true)
         .addField(
@@ -122,7 +122,7 @@ module.exports = {
         .setFooter({
           text: `To get info of each command type ${
             GuildDB ? GuildDB.prefix : client.botconfig.DefaultPrefix
-          }help [Command] | Have a nice day!`,
+          }help [Command] | MADE BY スマイル`,
         }).setDescription(`${Commands.join("\n")}
   
   Shiro Music Bot Version: v${require("../package.json").version}
@@ -150,7 +150,7 @@ module.exports = {
             iconURL: client.botconfig.IconURL,
           })
           .setDescription(cmd.description)
-          .setColor("GREEN")
+          .setColor("BLUE")
           //.addField("Name", cmd.name, true)
           .addField("Aliases", cmd.aliases.join(", "), true)
           .addField(
