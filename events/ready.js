@@ -1,13 +1,27 @@
 module.exports = async (client) => {
-  (client.Ready = true),
-    client.user.setPresence({
-    status: client.botconfig.Presence.status, // You can show online, idle, and dnd
-      activity: {
-        name: client.botconfig.Presence.name,
-        type: client.botconfig.Presence.type,
-      },
-});
-  client.Manager.init(client.user.id);
-  client.log("Successfully Logged in as " + client.user.tag); // You can change the text if you want, but DO NOT REMOVE "client.user.tag"
-  client.RegisterSlashCommands();
+  let statuses = [
+    "Shiro.help",
+    "Music",
+    "https://discord.gg/UFTXkxRrWT",
+    "https://github.com/Uunkn0wnN ",
+    "shiro music",
+    "https://shiroweb-dashboard.221447.repl.co",
+    "YOU",
+    "my self",
+    "nazarick clan",
+    "スマイル",
+    "MODERN WARSHIP: sea battle online",
+    "bacot",
+		"anjing",		
+    "https://Shiro-music.221447.repl.co"
+  ]
+
+  setInterval(function() {
+    let status = statuses[Math.floor(Math.random() * statuses.length)];
+    client.user.setActivity(status, {
+      type: "WATCHING",
+    });
+  }, 1000);
+  
+  console.log(`[API] Logged in as ${client.user.username}`);
 };
