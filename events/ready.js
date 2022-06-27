@@ -12,7 +12,7 @@ module.exports = async (client) => {
     "スマイル",
     "MODERN WARSHIP: sea battle online",
     "bacot",
-		"anjing",		
+    "anjing",		
     "https://Shiro-music.221447.repl.co"
   ]
 
